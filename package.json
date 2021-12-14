@@ -1,7 +1,6 @@
 {
   "name": "leaderboard",
   "version": "1.0.0",
-  "mode": "development",
   "description": "",
   "private": true,
   "scripts": {
