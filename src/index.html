@@ -9,67 +9,14 @@
     <main class="main">
       <section class="leaderboard">
         <h1>Leaderboard</h1>
-        
-        <div class="leaderboard-content">
-            <div class="recent-scores">
-                <span>Recent scores</span>
-                <button class="btn btn-refresh">Refresh</button>
-            </div>
-          <div class="leaderboard-item">
-            <div class="leaderboard-item-name">
-              <span>1</span>
-              <span>John Doe</span>
-            </div>
-            <div class="leaderboard-item-score">
-              <span>100</span>
-            </div>
-          </div>
-          <div class="leaderboard-item">
-            <div class="leaderboard-item-name">
-              <span>2</span>
-              <span>John Doe</span>
-            </div>
-            <div class="leaderboard-item-score">
-              <span>100</span>
-            </div>
-          </div>
-          <div class="leaderboard-item">
-            <div class="leaderboard-item-name">
-              <span>3</span>
-              <span>John Doe</span>
-            </div>
-            <div class="leaderboard-item-score">
-              <span>100</span>
-            </div>
-          </div>
-          <div class="leaderboard-item">
-            <div class="leaderboard-item-name">
-              <span>4</span>
-              <span>John Doe</span>
-            </div>
-            <div class="leaderboard-item-score">
-              <span>100</span>
-            </div>
-          </div>
-          <div class="leaderboard-item">
-            <div class="leaderboard-item-name">
-              <span>5</span>
-              <span>John Doe</span>
-            </div>
-            <div class="leaderboard-item-score">
-              <span>100</span>
-            </div>
-          </div>
-          <div class="leaderboard-item">
-            <div class="leaderboard-item-name">
-              <span>6</span>
-              <span>John Doe</span>
-            </div>
-            <div class="leaderboard-item-score">
-              <span>100</span>
-            </div>
-          </div>
+
+        <div class="recent-scores">
+          <span>Recent scores</span>
+          <button id="refresh-button" class="btn btn-refresh">Refresh</button>
         </div>
+        <ul class="leaderboard-content">
+          
+        </ul>
       </section>
       <section class="form form-menu" id="form-menu">
         <form id="leaderboard-form" class="leaderboard-form">
@@ -93,7 +40,11 @@
             />
           </div>
 
-          <button type="submit" class="btn btn-submit btn-success me-3">
+          <button
+            type="submit"
+            id="submit-button"
+            class="btn btn-submit btn-success me-3"
+          >
             Submit
           </button>
         </form>
