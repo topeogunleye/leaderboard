@@ -25,3 +25,6 @@ submitButton.addEventListener('click', async (event) => {
   document.querySelector('#score').value = '';
 });
 
+// render onClick of refresh button
+document.querySelector('#refresh-button').addEventListener('click', renderScores);
+
