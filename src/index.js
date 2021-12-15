@@ -28,3 +28,5 @@ submitButton.addEventListener('click', async (event) => {
 // render onClick of refresh button
 document.querySelector('#refresh-button').addEventListener('click', renderScores);
 
+// render on page load
+document.addEventListener('DOMContentLoaded', renderScores);
