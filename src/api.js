@@ -7,7 +7,19 @@ class game {
     const data = await res.json();
     return data.result;
   }
-  
+
+  // POST request
+  static addScore (obj) {
+    const res = await fetch(url, {
+       method: 'POST',
+       body: JSON.stringify(obj),
+       headers: {
+         'Content-Type': 'application/json',
+       }, // end headers
+     })
+     const data = await res.json();
+     return data.result;
+   }
 }
 
 export default game;
