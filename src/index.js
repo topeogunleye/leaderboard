@@ -2,6 +2,11 @@ import './style.scss';
 import game from './api';
 import leaderboard from './board';
 
+const renderScores = async () => {
+  const arrayOfScores = await game.getScore();
+  leaderboard(arrayOfScores);
+};
+
 //event listeners on submit button
 const submitButton = document.querySelector('#submit-button');
 submitButton.addEventListener('click', async (event) => {
