@@ -5,7 +5,8 @@ export default (score) => {
 
   score.forEach((item) => {
     const li = document.createElement('li');
-    li.innerHTML = `${item.user} - ${item.score}`;
+    li.classList.add('leaderboard-item');
+    li.innerHTML = `<span class="leaderboard-item-name">${item.user}</span> - <span class="leaderboard-item-score">${item.score}</span>`;
     leaderboard.appendChild(li);
   });
 };
