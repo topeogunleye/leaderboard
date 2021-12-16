@@ -11,6 +11,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "homepage": "https://topeogunleye.github.io/leaderboard",
   "devDependencies": {
     "@babel/eslint-parser": "^7.16.5",
     "@babel/plugin-transform-modules-commonjs": "^7.16.0",
