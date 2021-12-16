@@ -5,12 +5,14 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist",
     "start": "webpack serve --open",
     "build": "webpack"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "homepage": "https://topeogunleye.github.io/leaderboard",
   "devDependencies": {
     "@babel/eslint-parser": "^7.16.5",
     "@babel/plugin-transform-modules-commonjs": "^7.16.0",
@@ -26,6 +28,7 @@
     "webpack-dev-server": "^4.6.0"
   },
   "dependencies": {
+    "gh-pages": "^3.2.3",
     "lodash": "^4.17.21"
   }
 }
